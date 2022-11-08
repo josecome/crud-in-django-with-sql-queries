@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Records</title>  
+     {% load static %} 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+</head>  
+<body> 
+<h1>CRUD IN DJANGO WITH SQL QUERIES</h1> 
+<table class="">  
+    <thead class="">  
+    <tr>  
+        <th>ID</th>  
+        <th>Name</th>  
+        <th>Email</th>  
+        <th>Contact</th>  
+        <th>Actions</th>  
+    </tr>  
+    </thead>  
+    <tbody>  
+{% for client in clients %}  
+    <tr>  
+        <td>{{ client.cid }}</td>  
+        <td>{{ client.name }}</td>  
+        <td>{{ client.email }}</td>  
+        <td>{{ client.contact }}</td>  
+        <td>  
+            <a href="/edit/{{ client.cid }}"><span class="" >Edit</span></a>  
+            <a href="/delete/{{ client.cid }}">Delete</a>  
+        </td>  
+    </tr>  
+{% endfor %}  
+    </tbody>  
+</table>  
+<br>  
+<br>  
+<center><a href="/clnt" class="">Add New Client</a></center>  
+</body>  
+</html> 

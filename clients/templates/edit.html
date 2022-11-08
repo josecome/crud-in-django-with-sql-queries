@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+</head>  
+<body> 
+<h1>CRUD IN DJANGO WITH SQL QUERIES</h1> 
+<form method="POST" class="" action="/update/{{ clients.cid }}">  
+        {% csrf_token %}  
+    <div class="">  
+<br>  
+    <div class="">  
+    <label class=""></label>  
+    <div class="">  
+    <h3>Details</h3>  
+    </div>  
+  </div>  
+    <div class="">  
+    <label class="">Id:</label>  
+    <div class="">  
+        <input type="text" name="cid" id="id_cid" required maxlength="20" value="{{ clients.cid }}"/>  
+    </div>  
+  </div>  
+  <div class="">  
+    <label class="">Name:</label>  
+    <div class="">  
+        <input type="text" name="name" id="id_name" required maxlength="100" value="{{ clients.name }}" />  
+    </div>  
+  </div>  
+    <div class="">  
+    <label class="">Email:</label>  
+    <div class="">  
+        <input type="email" name="email" id="id_email" required maxlength="254" value="{{ clients.email }}" />  
+    </div>  
+  </div>  
+    <div class="">  
+    <label class="">Contact:</label>  
+    <div class="">  
+        <input type="text" name="contact" id="id_contact" required maxlength="15" value="{{ clients.contact }}" />  
+    </div>  
+  </div>  
+    <div class="">  
+    <label class=""></label>  
+    <div class="">  
+    <button type="submit" class="btn btn-success">Update</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+
+</body>  
+</html>  

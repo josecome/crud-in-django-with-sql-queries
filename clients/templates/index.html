@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+    {% load static %}  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+</head>  
+<body> 
+<h1>CRUD IN DJANGO WITH SQL QUERIES</h1> 
+<form method="POST" class="" action="/clnt">  
+        {% csrf_token %}  
+    <div class="container">  
+<br> {{form.errors}}<br> 
+    <div class="">  
+    <label class=""></label>  
+    <div class="">  
+    <h3>Enter Details</h3>  
+    </div>  
+  </div>  
+    <div class="">  
+    <label class="">Id:</label>  
+    <div class="">  
+      {{ form.cid }}  
+    </div>  
+  </div>  
+  <div class="">  
+    <label class="">Name:</label>  
+    <div class="">  
+      {{ form.name }}  
+    </div>  
+  </div>  
+    <div class="">  
+    <label class="">Email:</label>  
+    <div class="">  
+      {{ form.email }}  
+    </div>  
+  </div>  
+    <div class="">  
+    <label class="">Contact:</label>  
+    <div class="">  
+      {{ form.contact }}  
+    </div>  
+  </div>  
+    <div class="">  
+    <label class=""></label>  
+    <div class="">  
+    <button type="submit" class="">Save</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+</body>  
+</html>  
