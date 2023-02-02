@@ -5,6 +5,8 @@
     <title>Index</title>  
     {% load static %} 
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>  
 <body> 
 <h1>CRUD IN DJANGO WITH SQL QUERIES</h1> 
@@ -12,37 +14,37 @@
         {% csrf_token %}  
     <div class="">  
 <br>  
-    <div class="">  
+    <div class="mb-3">  
     <label class=""></label>  
     <div class="">  
     <h3>Details</h3>  
     </div>  
   </div>  
-    <div class="">  
-    <label class="">Id:</label>  
+    <div class="mb-3">  
+    <label class="form-label">Id:</label>  
     <div class="">  
         <input type="text" name="cid" id="id_cid" required maxlength="20" value="{{ clients.cid }}"/>  
     </div>  
   </div>  
-  <div class="">  
-    <label class="">Name:</label>  
+  <div class="mb-3">  
+    <label class="form-label">Name:</label>  
     <div class="">  
         <input type="text" name="name" id="id_name" required maxlength="100" value="{{ clients.name }}" />  
     </div>  
   </div>  
-    <div class="">  
-    <label class="">Email:</label>  
+    <div class="mb-3">  
+    <label class="form-label">Email:</label>  
     <div class="">  
         <input type="email" name="email" id="id_email" required maxlength="254" value="{{ clients.email }}" />  
     </div>  
   </div>  
-    <div class="">  
-    <label class="">Contact:</label>  
+    <div class="mb-3">  
+    <label class="form-label">Contact:</label>  
     <div class="">  
         <input type="text" name="contact" id="id_contact" required maxlength="15" value="{{ clients.contact }}" />  
     </div>  
   </div>  
-    <div class="">  
+    <div class="mb-3">  
     <label class=""></label>  
     <div class="">  
     <button type="submit" class="btn btn-success">Update</button>  
@@ -50,6 +52,7 @@
   </div>  
     </div>  
 </form>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>  
 </html>  
